@@ -8,7 +8,7 @@ export default function Home() {
     <main className="min-h-screen bg-stone-50">
       <Hero />
 
-      <section id="about" className="py-16 px-4 md:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section id="services" className="py-16 px-4 md:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-serif font-light mb-4 text-stone-800">Our Approach</h2>
           <div className="w-24 h-1 bg-stone-300 mx-auto mb-6"></div>

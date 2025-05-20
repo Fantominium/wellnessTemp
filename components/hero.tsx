@@ -1,17 +1,27 @@
 import Link from "next/link"
 import Image from "next/image"
 
+
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-16">
-      <div className="absolute inset-0 z-0">
-        <Image src="/images/hero-bg.png" alt="Wellness background" fill className="object-cover opacity-20" priority />
+    <section id="landing" className="relative min-h-screen flex items-center pt-16 overflow-hidden">
+      {/* Brushstroke background */}
+      <div className="absolute inset-0 z-0 pointer-events-none select-none">
+        <Image
+          src="/images/brushstroke.png"
+          alt=""
+          fill
+          className="object-cover opacity-40"
+          priority
+          aria-hidden="true"
+          draggable={false}
+        />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 z-10 py-16 md:py-24">
         <div className="max-w-3xl mx-auto text-center">
           <div className="mb-8 flex justify-center">
-            <Image src="/images/logo.png" alt="Harmony Wellness Logo" width={120} height={120} className="opacity-90" />
+            <Image src="/images/truFlowLogo.png" alt="Tru Flow Logo" width={120} height={120} className="opacity-90" />
           </div>
 
           <h1 className="text-4xl md:text-6xl font-serif font-light mb-6 text-stone-800 leading-tight">
